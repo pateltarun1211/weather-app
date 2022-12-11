@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="css/main.css">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/main.js" defer></script>
+<title>Weather</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 md-col-12"><h1>Weather</h1>
+                <h2>Enter Your Location</h2>
+                <form name="weather" id="weatherForm">
+                    <div class="col-12 form-box"><input type="text" id="city_name" placeholder="Enter City Name"></div>
+                    <div class="col-12 form-box"><input type="text" name="zip_code" id="zip_code" placeholder="Enter Zip Code"></div>
+                    <div class="col-12"><button class="form-button" id="get-data" type="submit" onclick="loadData()">Get Data</button></div>
+                    <div class="col-12"><button class="form-button" id="clear-data" onclick="clearData()">Clear Data</button></div></center>
+                </form>
+            </div>
+            <div class="col-12 md-col-12">
+                <div class="col-12"><section class="weather-results weather-lists"></section></div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+
